@@ -1,0 +1,31 @@
+
+==============================================================================
+LIBRERÍAS NECESARIAS PARA LA APLICACIÓN DE PRONÓSTICO SEMANAL
+==============================================================================
+--- Framework de la Aplicación Web ---
+La librería principal para construir la interfaz de usuario.
+streamlit==1.37.0
+
+--- Manipulación de Datos ---
+Esencial para manejar los DataFrames de entrada y salida.
+pandas==2.2.2
+
+--- Carga y Uso de Modelos ---
+Necesario para cargar los modelos guardados en formato .joblib.
+joblib==1.4.2
+
+La librería central para nuestros modelos de pronóstico.
+¡Es crucial usar la misma versión con la que se entrenaron los modelos!
+skforecast==0.17.0
+
+El motor de Machine Learning base para skforecast y nuestros modelos.
+scikit-learn==1.5.0
+
+Los tres tipos de modelos que entrenamos. Necesitamos los tres
+porque los modelos guardados dependen de ellos.
+lightgbm==4.3.0
+xgboost==2.0.3
+
+--- Utilidades Adicionales ---
+Requerido por pandas para poder escribir y descargar archivos .xlsx.
+openpyxl==3.1.4
